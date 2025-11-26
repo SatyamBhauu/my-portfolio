@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Developer | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome, might need a real kit or SVG icons -->
+    <!-- Using a CDN for icons to ensure they work immediately without setup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">DEV<span class="accent">.</span></a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Work</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <span class="subtitle fade-in-up">Hello, I'm</span>
+                <h1 class="title fade-in-up delay-1">Satya<span class="accent">.</span></h1>
+                <h2 class="role fade-in-up delay-2">Creative Developer & <br> UI/UX Enthusiast</h2>
+                <p class="description fade-in-up delay-3">
+                    I craft digital experiences that merge art with code. 
+                    Building the future of the web, one pixel at a time.
+                </p>
+                <div class="cta-group fade-in-up delay-4">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-2">
+                <div class="glowing-orb"></div>
+                <div class="grid-overlay"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-reveal>About <span class="accent">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-image" data-reveal>
+                        <div class="image-card">
+                            <!-- Placeholder for user image, using a gradient div for now -->
+                            <div class="placeholder-img"></div>
+                        </div>
+                    </div>
+                    <div class="about-text" data-reveal>
+                        <p>
+                            I'm a passionate developer who loves to solve problems through code. 
+                            My journey started with a curiosity for how things work, and it has evolved into a 
+                            career of building robust and beautiful web applications.
+                        </p>
+                        <p>
+                            I specialize in JavaScript, React, and modern CSS. I believe in clean code, 
+                            accessible design, and creating intuitive user interfaces.
+                        </p>
+                        <div class="skills-list">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Three.js</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Selected <span class="accent">Works</span></h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-reveal>
+                        <div class="project-image">
+                            <div class="project-placeholder p1"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Neon Dashboard</h3>
+                            <p class="project-desc">A futuristic analytics dashboard with real-time data visualization.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>D3.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-reveal>
+                        <div class="project-image">
+                            <div class="project-placeholder p2"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Redesign</h3>
+                            <p class="project-desc">A complete overhaul of a fashion brand's online store focusing on UX.</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Shopify</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-reveal>
+                        <div class="project-image">
+                            <div class="project-placeholder p3"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Chat Interface</h3>
+                            <p class="project-desc">A minimal and fast chat interface for interacting with LLMs.</p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>OpenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Get In <span class="accent">Touch</span></h2>
+                <p class="contact-text" data-reveal>Have a project in mind or just want to say hi? My inbox is always open.</p>
+                <a href="mailto:hello@example.com" class="btn btn-primary big-btn" data-reveal>Say Hello</a>
+                
+                <div class="social-links" data-reveal>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Satya. Built with <span class="heart">♥</span> and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
